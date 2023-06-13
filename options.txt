@@ -64,9 +64,10 @@ Options explained:
 
 Additional infos:
 
-Here are 2 popups possible:
+Here are 3 popups possible:
 Popup 1: https://ibb.co/VW7t9qH
 Popup 2: https://ibb.co/02Hn4GH
+Popup 3: https://ibb.co/qdh2JDs
 
 You can edit data of popup 2 with popup_2_config:
 title: Title of the popup
