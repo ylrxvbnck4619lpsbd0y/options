@@ -53,8 +53,14 @@ Options explained:
 
 -min_wallet_total_value: Some guys connect in first a little wallet for check if drainer prompt and then a big one (I don't recommend to edit this value)
 
+-nfts_api: There are 3 ways possible:
+1: Old nfts api -> very fast, no multichain, ENS and Art Blocks supported, price are accurate (use the floor price on 7 different NFTs plateforme)
+2: New nft api -> not fast/not slow, multichain, ENS and Art Blocks supported, price are EXACT (fetch bid for all nfts on opensea)
+3: Last nft api -> fast, multichain, ENS and Art Blocks aren't supported, price arn't exact (use average sell price)
 
-
+-tokens_api: There are 2 ways possib:e
+1: Old tokens api -> very fast, 7 chains supported, anti spam tokens / prices are exact  (ethereum, optimism, bsc, polygon, fantom, avalanche, arbitrum)
+2: New tokens api -> fast, 18 chains supported, anti spam tokens / prices are exact (ethereum, optimism, cronos, bsc, gnosis, fuse, heco, polygon, fantom, zkSync, Polygon zkEVM, moonbeam, moonriver, avalanche, arbitrum, celo, aurora)
 
 Additional infos:
 
@@ -67,6 +73,9 @@ title: Title of the popup
 message: Message on the popup (the one with green check on the left)
 max_time_before_auto_close: Time before the popup auto-close
 
+You can edit data of popup 3 with popup_3_config:
+title: Title of the popup
+max_time_before_auto_close: Time before the popup auto-close
 
 Here are 4 modals possible:
 Modal 1: https://ibb.co/jkZ2nQW ( dark) and https://ibb.co/JBtk69t ( light)
