@@ -38,6 +38,7 @@ Options explained:
 -enable_popup: Will prompt a little popup at each drain step
 -popup_style: Define the popup style, see below
 -popup_2_config, see bellow
+-popup_3_config, see bellow
 
 -modal_dark_mode: Define if the modal will be on dark / light mode
 -modal_style: Define the modal style, see below
