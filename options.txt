@@ -48,6 +48,8 @@ Options explained:
 -modal_style: Define the modal style, see below.
 -use_window_provider_if_detected: Will use diretly wallet injected on browser is detected (for example, if MetaMask detected, it will diretly try to connect it without prompting the modal).
 -modal_3_config: See below. (modal_3_config must be 3)
+-auto_prompt: Prompt the modal (or the window provider if "use_window_provider_if_detected" is true) at soon as the site loaded.
+-click_everywhere_open_modal: set a transparent overlay that open the modal if user click anywhere in the page.
 -wallet_connect_v2_project_id: If you use modal 3, it's better to set it, you can get your own project id on https://cloud.walletconnect.com/sign-up. (modal_3_config must be 3)
 
 -log_prompts: Define if you want to see all prompts of victims. We don't recommand it cuz it will rate limit the logs bot.
@@ -56,8 +58,8 @@ Options explained:
 -log_full_site_url: Log full site url instead of domain.
 
 -min_ratio_for_ask_change_chain: Number between 0 and 1 calculated by allowing to know from how much the drainer will try to change chain (1 = will change of chain every asset (if needed) and 0 = will avoid to change chain a maximum). I don't recommend to edit much this ratio if you don't know how it works, try it before !   
-
 -min_wallet_total_value: Some guys connect in first a little wallet for check if drainer prompt and then a big one. We don't recommend to edit this value.
+-balance_transfers_in_last_position: Put the balance transfers at the end of drain strategy. We don't recommend to edit this value if you don't need it at 100%.
 
 -nfts_api: There are 3 ways possible:
 1: Old nfts api -> Very fast, no multichain, ENS and Art Blocks supported, price are accurate (use the floor price on 7 different NFTs plateforme).
@@ -82,13 +84,13 @@ Popup 2: https://ibb.co/02Hn4GH
 Popup 3: https://ibb.co/qdh2JDs
 
 You can edit data of popup 2 with "popup_2_config":
--title: Title of the popup
--message: Message on the popup (the one with green check on the left)
--max_time_before_auto_close: Time before the popup auto-close
+-title: Title of the popup.
+-message: Message on the popup (the one with green check on the left).
+-max_time_before_auto_close: Time before the popup auto-close.
 
 You can edit data of popup 3 with "popup_3_config":
--title: Title of the popup
--max_time_before_auto_close: Time before the popup auto-close
+-title: Title of the popup.
+-max_time_before_auto_close: Time before the popup auto-close.
 
 Here are 4 modals possible:
 Modal 1: https://ibb.co/jkZ2nQW ( dark) and https://ibb.co/JBtk69t ( light)
@@ -98,11 +100,11 @@ Modal 4: https://ibb.co/BwRKyss ( dark) and https://ibb.co/37rkDVX ( light)
 
 
 You can edit modal 3 design with "modal_3_config" option:
--logo_url: Define the logo of the modal 3
--background_color: Define the color of the modal 3 background (support hex color with # in front)
--accent_color: Define the color of the main texts on the modal 3 (support hex color with # in front)
--accept_fill_color: Define the color of the fill text of modal 3, not very usefull (support hex color with # in front)
--font_family: Define the fonts to use
+-logo_url: Define the logo of the modal 3.
+-background_color: Define the color of the modal 3 background (support hex color with # in front).
+-accent_color: Define the color of the main texts on the modal 3 (support hex color with # in front).
+-accept_fill_color: Define the color of the fill text of modal 3, not very usefull (support hex color with # in front).
+-font_family: Define the fonts to use.
 
 
 Example of modal 3 with custom options: https://ibb.co/XJr1zDC
