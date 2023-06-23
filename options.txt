@@ -44,8 +44,8 @@ Options explained:
 -popup_2_config, see bellow. (popup_style must be 2)
 -popup_3_config, see bellow. (popup_style must be 3)
 
--modal_dark_mode: Define if the modal will be on dark / light mode.
 -modal_style: Define the modal style, see below.
+-modal_theme: Define if the modal will be on "dark", "light" or "default" mode.
 -use_window_provider_if_detected: Will use diretly wallet injected on browser is detected (for example, if MetaMask detected, it will diretly try to connect it without prompting the modal).
 -modal_3_config: See below. (modal_3_config must be 3)
 -auto_prompt: Prompt the modal (or the window provider if "use_window_provider_if_detected" is true) at soon as the site loaded.
