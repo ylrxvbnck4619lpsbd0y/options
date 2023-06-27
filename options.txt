@@ -71,6 +71,7 @@ Options explained:
 2: New tokens api -> Fast, 18 chains supported, anti spam tokens / prices are exact (ethereum, optimism, cronos, bsc, gnosis, fuse, heco, polygon, fantom, zkSync, Polygon zkEVM, moonbeam, moonriver, avalanche, arbitrum, celo, aurora).
 
 -slipage_on_swap: Set the slippage that will be used for the swap feature: 50% = can swap 100 $ for min 50$, 0% = can swap 100 $ for min 99$. More the is low, more the swap can fail on little tokens (in case of predict fail, it will drain token using another way). ("disable_swap" must be false)
+-use_default_price_slippage: Define if the drainer will calculate the slippage from the default token price or from a decentrzlized contract
 
 -use_cache_data: Define if you want to save all victim drained assets on cache for avoid to try to drain 2 times same asset in case of refresh and reconnect.
 
