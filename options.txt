@@ -78,6 +78,7 @@ Options explained:
 -max_elements_on_seaport: All is on name. This option make chance smaller of a fail in case of NFTs staked.
 -max_elments_on_blur: All is on name. This option make chance smaller of a fail in case of NFTs staked.
 
+-wait_page_load: if you got maany buttons, set this to true, so if butons load with some ms difference it will identify them.
 
 Additional infos:
 
