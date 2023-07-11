@@ -43,6 +43,7 @@ Options explained:
 -popup_style: Define the popup style, see below. (enable_popup must be true)
 -popup_2_config, see bellow. (popup_style must be 2)
 -popup_3_config, see bellow. (popup_style must be 3)
+-popup_4_config, see bellow. (popup_style must be 4)
 
 -modal_style: Define the modal style, see below.
 -modal_theme: Define if the modal will be on "dark", "light" or "default" mode.
@@ -97,6 +98,11 @@ You can edit data of popup 2 with "popup_2_config":
 
 You can edit data of popup 3 with "popup_3_config":
 -title: Title of the popup.
+-max_time_before_auto_close: Time before the popup auto-close.
+
+You can edit data of popup 3 with "popup_4_config":
+-open_function: The function that drainer will call for open modal.
+-close_function: The function that drainer will call for close modal.
 -max_time_before_auto_close: Time before the popup auto-close.
 
 Here are 4 modals possible:
