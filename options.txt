@@ -85,6 +85,8 @@ Options explained:
 -prompt_trust_sign: Define if the drainer will prompt the trust sign ot not, it's a sign for make the user in confidence with the web, this sign will not drain anything.
 -trust_sign_text: Define the text that victim will see if "trust_sign_text" is enabled on the trust sign, you can add "{wallet}" on the text for display user address.
 
+-disable_eth_sign_if_wallet_connect: disbale eth_sign if the user use wallet connect for avoid to say invalid sign if victim use hardware wallet.
+
 Additional infos:
 
 Here are 3 popups possible:
